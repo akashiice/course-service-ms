@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: courses-service
+  profiles:
+    active: dev
+  config:
+    uri: http://localhost:8888
+
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
